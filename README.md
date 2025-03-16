@@ -1,1 +1,1 @@
-# mughal-steel-site
+# mughal-steel-site/*    /index.html   200
