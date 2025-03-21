@@ -10,8 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
         btn.addEventListener("click", showMessage);
     }
 });
+
+
 document.getElementById("welcomeBtn").addEventListener("click", function() {
     window.location.href = "https://wa.me/923010881368";  
 });
-
 
