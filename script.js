@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 document.getElementById("welcomeBtn").addEventListener("click", function() {
-    window.location.href = "https://wa.me/923010881368";  // 03010881368
+    window.location.href = "https://wa.me/923010881368";  
 });
+
 
