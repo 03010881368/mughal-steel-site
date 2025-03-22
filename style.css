@@ -47,17 +47,32 @@ section {
 }
 
 /* WhatsApp Button */
-.whatsapp-button {
-    display: inline-block;
+.whatsapp-order-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     background-color: #25D366;
     color: white;
-    padding: 10px 20px;
-    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 50px;
     text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.whatsapp-button:hover {
-    background-color: #1DA851;
+.whatsapp-order-btn:hover {
+    transform: scale(1.1);
+    background-color: #1EBE5D;
 }
+
+.whatsapp-order-btn img {
+    width: 25px;
+    height: 25px;
+}
+
