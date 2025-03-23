@@ -1,3 +1,4 @@
+
 document.getElementById("welcomeBtn").addEventListener("click", function() {
     window.location.href = "https://wa.me/923010881368";  
 });
@@ -11,32 +12,46 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 500);
 });
 
+// Product data
 const products = [
-    {
-        name: "Luxury Gold Frame Table",
-        oldPrice: 35000,
-        newPrice: 24999,
-        image: "https://yourwebsite.com/images/table1.jpg",
-        whatsapp: "https://wa.me/923001234567"
-    },
-    {
-        name: "Luxury Coffee Table",
-        oldPrice: 15000,
-        newPrice: 10399,
-        image: "https://yourwebsite.com/images/table2.jpg",
-        whatsapp: "https://wa.me/923001234567"
-    }
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/1740394272907.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/1740394290714.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/1740749978788.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/1740750046323.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/1740840431238.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/1741298424985.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/IMG_20250308_115240_316.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740394200915.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740394201474.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740394201805.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406167018.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406167709.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406168054.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406168453.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406168804.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406574640.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575081.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575606.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575988.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740740928332.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740740930035.jpg" }
 ];
 
+// Pricing and WhatsApp link
+const marketPrice = 40000;
+const offerPrice = 30000;
+const whatsappLink = "https://wa.me/923010881368?text=I%20want%20to%20order%20this%20table";
+
+// Insert products into the page
 let productList = document.getElementById("product-list");
 
-products.forEach(product => {
+products.forEach((product, index) => {
     let productCard = `
         <div class="product">
-            <img src="${product.image}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <p>Price: <span class="price-old">Rs.${product.oldPrice}</span> <span class="price-new">Rs.${product.newPrice}</span></p>
-            <a href="${product.whatsapp}" target="_blank">
+            <img src="${product.image}" alt="Stainless Steel Table ${index + 1}">
+            <h3>Luxury Stainless Steel Table</h3>
+            <p>Price: <span class="price-old">Rs.${marketPrice}</span> <span class="price-new">Rs.${offerPrice}</span></p>
+            <a href="${whatsappLink}" target="_blank">
                 <button>Order on WhatsApp</button>
             </a>
         </div>
