@@ -1,16 +1,3 @@
-document.getElementById("welcomeBtn").addEventListener("click", function() {
-    window.location.href = "https://wa.me/923010881368";  
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const welcomeText = document.getElementById("welcomeText");
-    welcomeText.style.opacity = 0;
-    setTimeout(() => {
-        welcomeText.style.opacity = 1;
-        welcomeText.style.transition = "opacity 2s";
-    }, 500);
-});
-
 // Product data
 const products = [
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/1740394272907.jpg" },
@@ -20,7 +7,9 @@ const products = [
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/1740840431238.jpg" },
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/1741298424985.jpg" },
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/IMG_20250308_115240_316.jpg" },
-    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740394200915.jpg" }
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740394200915.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740394201474.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740394201805.jpg" }
 ];
 
 // Pricing and WhatsApp link
@@ -35,7 +24,7 @@ products.forEach((product, index) => {
         <div class="product">
             <img src="${product.image}" alt="Stainless Steel Table ${index + 1}">
             <h3>Luxury Stainless Steel Table</h3>
-            <p>Price: <span class="price-old" style="text-decoration: line-through;">Rs.${marketPrice}</span> 
+            <p>Price: <span class="price-old">Rs.${marketPrice}</span> 
             <span class="price-new">Rs.${offerPrice}</span></p>
             <a href="${uniqueWhatsAppLink}" target="_blank">
                 <button>Order on WhatsApp</button>
