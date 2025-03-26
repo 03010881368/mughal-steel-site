@@ -1,5 +1,8 @@
-// Product data
+// Product data (Rearranged)
 const products = [
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740740928332.jpg" }, 
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740740930035.jpg" },
+    
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/1740394272907.jpg" },
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/1740394290714.jpg" },
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/1740749978788.jpg" },
@@ -18,9 +21,7 @@ const products = [
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406574640.jpg" },
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575081.jpg" },
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575606.jpg" },
-    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575988.jpg" },
-    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740740928332.jpg" },
-    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740740930035.jpg" }
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575988.jpg" }
 ];
 
 // Pricing and WhatsApp link
@@ -28,6 +29,7 @@ const marketPrice = 40000;
 const offerPrice = 30000;
 const productList = document.getElementById("product-list");
 
+// Loop through products and display them
 products.forEach((product, index) => {
     let uniqueWhatsAppLink = `https://wa.me/923010881368?text=I%20want%20to%20order%20Table%20${index + 1}`;
     
@@ -42,6 +44,9 @@ products.forEach((product, index) => {
             </a>
         </div>
     `;
-    productList.insertAdjacentHTML("beforeend", productCard);
+
+    setTimeout(() => {
+        productList.insertAdjacentHTML("beforeend", productCard);
+    }, index * 50);
 });
-    
+
