@@ -74,4 +74,6 @@ h1 {
     width: 35px;
     height: 35px;
 }
-
+body {
+    background-color: #f4f4f4;
+}
