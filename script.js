@@ -9,7 +9,18 @@ const products = [
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/IMG_20250308_115240_316.jpg" },
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740394200915.jpg" },
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740394201474.jpg" },
-    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740394201805.jpg" }
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740394201805.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406167018.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406167709.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406168054.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406168453.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406168804.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406574640.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575081.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575606.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575988.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740740928332.jpg" },
+    { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740740930035.jpg" }
 ];
 
 // Pricing and WhatsApp link
@@ -33,3 +44,4 @@ products.forEach((product, index) => {
     `;
     productList.insertAdjacentHTML("beforeend", productCard);
 });
+    
