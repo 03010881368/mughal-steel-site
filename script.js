@@ -22,6 +22,7 @@ const products = [
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575081.jpg", name: "Timeless Stainless Steel Table", description: "A long-lasting investment for your home." },
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575606.jpg", name: "Versatile Steel Table", description: "A must-have for elegant interiors." },
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575988.jpg", name: "Artistic Stainless Steel Table", description: "A unique masterpiece for your space." }
+    < img src="https://raw.githubusercontent.com/03010881368/mughal-steel-site/a85c89088dc1fbcf618cc5d3c3108c973fa07ea8/images/edited_background.jpg" alt="Mughal Steel Background">
 ];
 
 // Pricing and WhatsApp link
