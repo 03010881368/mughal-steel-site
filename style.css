@@ -1,7 +1,10 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url('https://raw.githubusercontent.com/03010881368/mughal-steel-site/a85c89088dc1fbcf618cc5d3c3108c973fa07ea8/images/edited_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #333;
     margin: 0;
     padding: 0;
@@ -68,12 +71,13 @@ h1 {
     border-radius: 50%;
     width: 60px;
     height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .whatsapp-button img {
     width: 35px;
     height: 35px;
-}
-body {
-    background-color: #f4f4f4;
 }
