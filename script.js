@@ -1,8 +1,7 @@
-// Product data (Last two images moved to the top)
+// Product data
 const products = [
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740740930035.jpg", name: "Elegant Stainless Steel Table", description: "A modern and stylish table perfect for any setting." },
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740740928332.jpg", name: "Premium Quality Table", description: "Crafted with high-quality stainless steel for durability." },
-
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/1740394272907.jpg", name: "Luxury Stainless Steel Table", description: "Sleek design with a perfect finish for your home." },
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/1740394290714.jpg", name: "Modern Stainless Steel Table", description: "A perfect blend of style and functionality." },
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/1740749978788.jpg", name: "Classic Stainless Steel Table", description: "Timeless design with unmatched durability." },
@@ -22,7 +21,6 @@ const products = [
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575081.jpg", name: "Timeless Stainless Steel Table", description: "A long-lasting investment for your home." },
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575606.jpg", name: "Versatile Steel Table", description: "A must-have for elegant interiors." },
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575988.jpg", name: "Artistic Stainless Steel Table", description: "A unique masterpiece for your space." }
-    < img src="https://raw.githubusercontent.com/03010881368/mughal-steel-site/a85c89088dc1fbcf618cc5d3c3108c973fa07ea8/images/edited_background.jpg" alt="Mughal Steel Background">
 ];
 
 // Pricing and WhatsApp link
@@ -30,21 +28,26 @@ const marketPrice = 40000;
 const offerPrice = 30000;
 const productList = document.getElementById("product-list");
 
-products.forEach((product, index) => {
-    let uniqueWhatsAppLink = `https://wa.me/923010881368?text=I%20want%20to%20order%20Table%20${index + 1}`;
-    
-    let productCard = `
-        <div class="product">
-            <img src="${product.image}" alt="Table ${index + 1}">
-            <h3>${product.name}</h3>
-            <p>${product.description}</p>
-            <p>Price: <span class="price-old">Rs.${marketPrice}</span> 
-            <span class="price-new">Rs.${offerPrice}</span></p>
-            <a href="${uniqueWhatsAppLink}" target="_blank">
-                <button>Order on WhatsApp</button>
-            </a>
-        </div>
-    `;
-    productList.insertAdjacentHTML("beforeend", productCard);
-});
+document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/03010881368/mughal-steel-site/a85c89088dc1fbcf618cc5d3c3108c973fa07ea8/images/edited_background.jpg')";
+document.body.style.backgroundSize = "cover";
+document.body.style.backgroundPosition = "center";
 
+document.addEventListener("DOMContentLoaded", () => {
+    products.forEach((product, index) => {
+        let uniqueWhatsAppLink = `https://wa.me/923010881368?text=I%20want%20to%20order%20Table%20${index + 1}`;
+        
+        let productCard = `
+            <div class=\"product\">
+                <img src=\"${product.image}\" alt=\"Table ${index + 1}\">
+                <h3>${product.name}</h3>
+                <p>${product.description}</p>
+                <p>Price: <span class=\"price-old\">Rs.${marketPrice}</span> 
+                <span class=\"price-new\">Rs.${offerPrice}</span></p>
+                <a href=\"${uniqueWhatsAppLink}\" target=\"_blank\">
+                    <button>Order on WhatsApp</button>
+                </a>
+            </div>
+        `;
+        productList.insertAdjacentHTML("beforeend", productCard);
+    });
+});
