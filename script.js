@@ -1,4 +1,3 @@
-// Product data
 const products = [
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740740930035.jpg", name: "Elegant Stainless Steel Table", description: "A modern and stylish table perfect for any setting." },
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740740928332.jpg", name: "Premium Quality Table", description: "Crafted with high-quality stainless steel for durability." },
@@ -23,31 +22,17 @@ const products = [
     { image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575988.jpg", name: "Artistic Stainless Steel Table", description: "A unique masterpiece for your space." }
 ];
 
-// Pricing and WhatsApp link
-const marketPrice = 40000;
-const offerPrice = 30000;
-const productList = document.getElementById("product-list");
+const gallery = document.getElementById('product-list');
 
-document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/03010881368/mughal-steel-site/a85c89088dc1fbcf618cc5d3c3108c973fa07ea8/images/edited_background.jpg')";
-document.body.style.backgroundSize = "cover";
-document.body.style.backgroundPosition = "center";
-
-document.addEventListener("DOMContentLoaded", () => {
-    products.forEach((product, index) => {
-        let uniqueWhatsAppLink = `https://wa.me/923010881368?text=I%20want%20to%20order%20Table%20${index + 1}`;
-        
-        let productCard = `
-            <div class=\"product\">
-                <img src=\"${product.image}\" alt=\"Table ${index + 1}\">
-                <h3>${product.name}</h3>
-                <p>${product.description}</p>
-                <p>Price: <span class=\"price-old\">Rs.${marketPrice}</span> 
-                <span class=\"price-new\">Rs.${offerPrice}</span></p>
-                <a href=\"${uniqueWhatsAppLink}\" target=\"_blank\">
-                    <button>Order on WhatsApp</button>
-                </a>
-            </div>
-        `;
-        productList.insertAdjacentHTML("beforeend", productCard);
-    });
+products.forEach(product => {
+    const div = document.createElement('div');
+    div.className = 'product';
+    div.innerHTML = `
+        <img src="${product.image}" alt="${product.name}">
+        <h3>${product.name}</h3>
+        <p>${product.description}</p>
+        <p><span class="price-old">Rs. 80,000</span><span class="price-new">Rs. 70,000</span></p>
+        <button onclick="window.open('https://wa.me/923010881368?text=I%20want%20to%20order%20this%20table', '_blank')">Order Now</button>
+    `;
+    gallery.appendChild(div);
 });
