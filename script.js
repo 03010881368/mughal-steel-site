@@ -1,4 +1,4 @@
-// Product data with detailed and professional descriptions based on product type
+
 const products = [
     { 
         image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740740930035.jpg", 
