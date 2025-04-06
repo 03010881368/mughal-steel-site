@@ -99,3 +99,17 @@ const products = [
         image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575606.jpg", 
         name: "Versatile Steel Table", 
         description: "A versatile steel table designed for
+const productList = document.getElementById('product-list');
+
+products.forEach(product => {
+    const productDiv = document.createElement('div');
+    productDiv.classList.add('product');
+
+    productDiv.innerHTML = `
+        <img src="${product.image}" alt="${product.name}">
+        <h3>${product.name}</h3>
+        <p>${product.description}</p>
+    `;
+
+    productList.appendChild(productDiv);
+});
