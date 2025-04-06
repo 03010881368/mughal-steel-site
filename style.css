@@ -1,85 +1,74 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://raw.githubusercontent.com/03010881368/mughal-steel-site/a85c89088dc1fbcf618cc5d3c3108c973fa07ea8/images/edited_background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #333;
     margin: 0;
     padding: 0;
+    background-color: #f3f3f3;
+}
+
+header {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
-h1 {
-    background-color: #007bff;
-    color: white;
+main {
     padding: 20px;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
+    justify-content: center;
 }
 
 .product {
-    background: white;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
     padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
-}
-
-.product:hover {
-    transform: scale(1.05);
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .product img {
-    width: 100%;
-    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
 }
 
 .product h3 {
     margin: 10px 0;
-    font-size: 20px;
-    color: #222;
+    color: #333;
 }
 
 .product p {
-    font-size: 16px;
     color: #555;
+    font-size: 14px;
 }
 
-.price-old {
-    text-decoration: line-through;
-    color: red;
-    margin-right: 10px;
-}
-
-.price-new {
-    color: green;
-    font-weight: bold;
-}
-
-.whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+.product a.whatsapp-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
     background-color: #25D366;
-    padding: 12px;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-.whatsapp-button img {
-    width: 35px;
-    height: 35px;
+.product a.whatsapp-button:hover {
+    background-color: #1ebc59;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1f1f1f;
+    color: white;
+    margin-top: 30px;
 }
