@@ -101,7 +101,6 @@ const products = [
     description: "A versatile steel table designed for all spaces, whether residential or commercial. Its strong frame and stylish design ensure both functionality and elegance, making it a reliable choice for every setting."
 }
 
-    {
 const productList = document.getElementById('product-list');
 
 products.forEach(product => {
