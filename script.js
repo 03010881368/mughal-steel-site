@@ -1,4 +1,3 @@
-
 const products = [
     { 
         image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740740930035.jpg", 
@@ -95,11 +94,12 @@ const products = [
         name: "Timeless Stainless Steel Table", 
         description: "A timeless piece that seamlessly blends into any decor, this stainless steel table offers both style and durability. Whether in a living room, office, or study, this table provides lasting value and enhances the beauty of the space."
     },
-{
-    image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575606.jpg", 
-    name: "Versatile Steel Table", 
-    description: "A versatile steel table designed for all spaces, whether residential or commercial. Its strong frame and stylish design ensure both functionality and elegance, making it a reliable choice for every setting."
-}
+    {
+        image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/Photo_1740406575606.jpg", 
+        name: "Versatile Steel Table", 
+        description: "A versatile steel table designed for all spaces, whether residential or commercial. Its strong frame and stylish design ensure both functionality and elegance, making it a reliable choice for every setting."
+    }
+];
 
 const productList = document.getElementById('product-list');
 
@@ -114,4 +114,4 @@ products.forEach(product => {
     `;
 
     productList.appendChild(productDiv);
-})
+});
