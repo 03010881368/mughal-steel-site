@@ -37,7 +37,8 @@ const products = [
     { 
         image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/1741298424985.jpg", 
         name: "Elegant Steel Table", 
-        description: "This elegant steel table features a minimalist design that adds charm to any interior."
+        description: "Mughal Steel Products – Where Craftsmanship Meets Elegance.Premium quality stainless steel tables designed with precision, built for style and trusted by those who value durability and design. Proudly crafted in Karachi, admired across Pakistan."
+
     },
     { 
         image: "https://github.com/03010881368/mughal-steel-site/raw/main/images/IMG_20250308_115240_316.jpg", 
